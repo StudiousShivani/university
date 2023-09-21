@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--helps to make website responsive-->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- connecting google fonts here -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- to add icons like menu bar and close -->
+    <script
+      src="https://kit.fontawesome.com/0185f24ec6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="images/logo.png" /> </a>
+        <div class="nav-links" id="navLinks">
+          <!-- onclick is a js concept wich helps to call the written function(i.e. showmwnu() and hidemenu()) that is used to make icons work    -->
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Course.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACTS</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!-- about content -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's Largest University</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, dignissimos vitae, deserunt quidem atque nihil a
+            sapiente dolores quos, nesciunt impedit? Veniam voluptatibus illum
+            nulla totam necessitatibus, deserunt dignissimos quasi explicabo
+            nostrum excepturi? Quam laudantium soluta, suscipit aliquid ratione
+            possimus, odit nostrum, rerum labore debitis sapiente. Voluptates
+            tempora maxime rem.
+          </p>
+          <a href="" class="hero-btn red-btn"> EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" alt="about image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, <br />
+        aperiam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Quisquam, sed?
+      </p>
+      <div class="icons">
+        <!-- facebook icon -->
+        <!-- <i class="fa fa-facebook"></i> -->
+        <i class="fa-brands fa-facebook-f"></i>
+        <!-- instagram icon
+        <i class="fa fa-instagram"></i> -->
+        <i class="fa-brands fa-instagram"></i>
+        <!-- twitter icon
+        <i class="fa fa-twitter"></i> -->
+        <i class="fa-brands fa-twitter"></i>
+        <!-- linkedin icon
+        <i class="fa fa-linkedin"></i> -->
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-star"></i> by easy tutorials</p>
+    </section>
+
+    <!-- javascript for toggle menu -->
+    <script>
+      // variable declaration
+      var navLinks = document.getElementById("navLinks");
+      // function declaration
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
